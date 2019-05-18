@@ -95,7 +95,7 @@ public class Keyboard extends JComponent {
      * @return boolean true if key is UP
      */
     public boolean isUp(int key) {
-        if (keys[key] == keyState.UP) return true;
+        if (keys[key] == keyState.UP || keys[key] == keyState.JUST_RELEASED) return true;
         return false;
     }
     /**
